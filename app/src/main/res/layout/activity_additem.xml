@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context="com.example.android.movielist.additem">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Title: "
+        android:textSize="30dp"
+        android:id="@+id/title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title"
+        android:textSize="20dp"
+        android:text=""
+        android:id="@+id/movietitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMBD Code: "
+        android:textSize="30dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imbd"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imbd"
+        android:textSize="20dp"
+        android:text=""
+        android:id="@+id/moviecode"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="ADD"
+        android:onClick="addmovie"
+
+        />
+</RelativeLayout>
